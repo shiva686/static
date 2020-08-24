@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin ml($color){
+   margin-left: 100px;
+   color : $color;
+}
+.img-hm{
+  width: 100%;
+  height: auto;
+}
+.Hg{
+   margin-top:100px;
+   @include ml(black);
+} 
+.sub-Hg{
+    @include ml(black);
+}
+.About{
+	margin-top:100px;
+	@include ml(black);
+}
+.About-des{
+	 @include ml(black);
+}
+.textarea{
+	resize: none;
+	width:300px;
+	height: 200px;
+	overflow: auto;
+}
+.lable{
+	font-weight: bold;
+}
+.form-custom{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top:80px;
+}
+.mt{
+  margin-top: 10px;
+}
+@media only screen and (max-width: 400px){
+	.textarea{
+	width:200px;
+	height: 120px;
+}  
+}
+@mixin m{
+    margin-left:0;
+    text-align: center;
+   }
+@media only screen and (max-width: 766px){
+  .md{
+    display: flex;
+  }
+  .mdf1{
+    order: 2;
+  }
+  .mdf2{
+    order: 1;
+  }
+  .img-hm{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  height: auto;
+  }
+.Hg{
+    @include m;
+    margin-top:10px;
+   }
+  .sub-Hg{
+     @include m;
+   }
+  .About{
+     @include m;
+   }
+  .About-des{
+     @include m;
+   }
+}
+@media only screen and (max-width: 620px) {
+
+  
+   .nav-resize{
+    display: flex;
+    justify-content: center;
+   }
+   
+   
+}
